@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-zip-autosuggest/static/css/main.59d8fef1.css",
+    "main.js": "/react-zip-autosuggest/static/js/main.73988ec6.js",
+    "index.html": "/react-zip-autosuggest/index.html",
+    "main.59d8fef1.css.map": "/react-zip-autosuggest/static/css/main.59d8fef1.css.map",
+    "main.73988ec6.js.map": "/react-zip-autosuggest/static/js/main.73988ec6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59d8fef1.css",
+    "static/js/main.73988ec6.js"
+  ]
+}
