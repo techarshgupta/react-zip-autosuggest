@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 
-const useDebounce = (val:any, offset=600) => {
+const useDebounce = (val:any, offset=400) => {
     const [debouncedVal, setDebouncedVal] = useState(val)
 
     useEffect(() => {

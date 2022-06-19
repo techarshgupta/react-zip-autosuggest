@@ -104,7 +104,7 @@ function App() {
     if (search.length === 0) {
       setValid('');
     }
-    if (search.length > 1) {
+    if (search.length >= 1) {
       validateZip(search);
       const filterZip: IZip[] = zipCodes.filter((zip) => {
         return Object.values(zip).some((word) =>
@@ -112,7 +112,8 @@ function App() {
         );
       });;
       setZipOtions(filterZip);
-      if(filterZip.length > 0) setShowOptions(true);
+      if (filterZip.length > 0) setShowOptions(true);
+      if (filterZip.length === 1 && filterZip[0].code === +search) setShowOptions(false);
     } else {
       setShowOptions(false);
     }
