@@ -144,7 +144,10 @@ function App() {
           </label>
           <div className="flex relative">
             <input
-              className="appearance-none block w-full border border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:rounded-b-none"
+              className={`appearance-none block w-full border text-gray-800 border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:rounded-b-none
+              ${ valid === 'invalid' ? 'border-red-600 border' : '' }
+              ${ valid === 'valid' ? 'border-green-600 border' : '' }
+              `}
               id="zip"
               type="number"
               placeholder="90210"
